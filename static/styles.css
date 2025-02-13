@@ -1,0 +1,23 @@
+body {
+    background-color: #1B2A41;
+    height: 300vh;
+}
+
+/* NAVBAR ITEMS */
+
+.navbar {
+    background-color: #0C1821;
+    height: 10vh;
+}
+
+
+
+.welcome-screen {
+
+    height: 90vh;
+}
+
+.intro-screen {
+    background-color: #324A5F;
+    height: 100vh;
+}
