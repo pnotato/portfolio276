@@ -1,50 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- These lines are for the bootstrap library.  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/styles.css">
-    <title> Nicholas Chan // Portfolio 276</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Nicholas Chan</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Projects</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="welcome-screen">
-        <div class="welcome-name-section">
-          <div class="welcome-text">Hi! I'm Nicholas Chan. I'm a student at <br><a class="sfu-text" alt="An Image of Simon Fraser University" href="https://www.sfu.ca">Simon Fraser University</a>.</div>
-          <a style="color: white">_</a>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nicholasch-an/" target="_blank" class="icon linkedin-icon" data-tooltip="LinkedIn"></a>
-            <a href="https://github.com/pnotato/" target="_blank" class="icon github-icon" data-tooltip="Github"></a>
-            <a href="mailto:nca100@sfu.ca" target="_blank" class="icon email-icon" data-tooltip="Email"></a>
 
-          </div>
-        </div>
-        <a class="welcome-image-section icon" data-tooltip="Simon Fraser University (SFU) in Burnaby, BC" href="https://www.sfu.ca">
-        </a>
+<head>
+  <!-- These lines are for the bootstrap library.  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="static/styles.css">
+  <title> Nicholas Chan // Portfolio 276</title>
+</head>
+
+<body>
+
+  <div class="welcome-screen">
+    <div class="welcome-name-section">
+      <div class="welcome-text">Hi! I'm Nicholas Chan. I'm a student at <br><a class="sfu-text"
+          alt="An Image of Simon Fraser University" href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+      <a style="color: white">_</a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/nicholasch-an/" target="_blank" class="icon linkedin-icon"
+          data-tooltip="LinkedIn"></a>
+        <a href="https://github.com/pnotato/" target="_blank" class="icon github-icon" data-tooltip="Github"></a>
+        <a href="mailto:nca100@sfu.ca" target="_blank" class="icon email-icon" data-tooltip="Email"></a>
+        <a href="./static/276resume.pdf" target="_blank" class="icon resume-icon" data-tooltip="Resume"></a>
 
       </div>
-      <div class="about-screen">
-        <a class="about-image-section icon" data-tooltip="The British Columbia Cancer Research Centre (BCCRC)" href="https://www.bccrc.ca/"></a>
-        <div class="about-name-section">
-          <div class="about-text">I'm a computer science student and previously worked as a co-op at <br><a href="https://www.bccrc.ca/" alt="An Image of the BC Cancer Research Centre" class="sfu-text">BC Cancer</a>.<br><br>I want use computers to help others.</div>
-        </div>
-        
+    </div>
+    <a class="welcome-image-section icon" data-tooltip="Simon Fraser University (SFU) in Burnaby, BC"
+      href="https://www.sfu.ca">
+    </a>
 
+  </div>
+  <div class="about-screen">
+    <a class="about-image-section icon" data-tooltip="The British Columbia Cancer Research Centre (BCCRC)"
+      href="https://www.bccrc.ca/"></a>
+    <div class="about-name-section">
+      <div class="about-text">I'm a computer science student, who previously worked as a co-op student at <a
+          href="https://www.bccrc.ca/" alt="An Image of the BC Cancer Research Centre" class="sfu-text">BC
+          Cancer</a>.<br><br>I also helped develop <a href="https://aumoui.com/" class="sfu-text">AumOui</a>'s website.
       </div>
-  </body>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+  </div>
+  <div class="project-screen">
+    <div class="project-section">
+      <div class="welcome-text">Here are some of my projects.</div>
+      <div class="project-row">
+        <div class="project-image icon">
+          <img src="static/images/hirehigher.png" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">HireHigher</div>
+        </div>
+        <div class="project-image icon">
+          <img src="static/images/quackii.png" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">Quackii</div>
+        </div>
+        <div class="project-image icon">
+          <img src="static/images/credeat.png" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">CredEat</div>
+        </div>
+      </div>
+      <div class="project-row">
+        <div class="project-image icon">
+          <img src="static/images/electric.png" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">Electrical Data Anomalies</div>
+        </div>
+        <div class="project-image icon">
+          <img src="static/images/wecycle.png" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">WeCycle</div>
+        </div>
+        <div class="project-image icon">
+          <img src="static/images/rainy.jpg" alt="Project 1 Screenshot">
+          <div class="overlay"></div>
+          <div class="project-text">Umbrella</div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<footer>
+  <a style="font-weight: bolder;">Contact Me:</a>
+  <a>LinkedIn</a>
+  <a>Github</a>
+  <a>Email</a>
+  <a>Resume</a>
+  <a class="rev-footer" style="font-weight: bolder;">Nicholas Chan</a>
+</footer>
+
 </html>
