@@ -1,5 +1,5 @@
 body {
-    background-color: #1B2A41;
+    background-color: white;
     height: 300vh;
 }
 
@@ -8,16 +8,113 @@ body {
 .navbar {
     background-color: #0C1821;
     height: 10vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 
 
 .welcome-screen {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 90vh;
 }
 
-.intro-screen {
+.welcome-name-section {
+
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 35vw;
+    font-size: 3em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: left;
+    color: black;
+
+}
+
+.welcome-image-section {
+    background-image: url(./SFU.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    width: 50vw;
+    aspect-ratio: 4/3;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+
+    height: 10vh;
+
+    display: flex;
+    gap: 10vh;
+    flex-direction: row;
+}
+
+.icon {
+    height: 10vh;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover effect */
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.7); /* Enhances shadow for depth */
+    filter: brightness(1.2); /* Makes the icon slightly brighter */
+}
+
+/* Click (active) effect */
+.icon:active {
+    transform: scale(0.95); /* Slightly shrinks when clicked for a pressing effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Lowers shadow when pressed */
+    filter: brightness(0.9); /* Slightly dims to indicate a click */
+}
+
+.linkedin-icon {
+    background-image: url(./icons/linkedin.png);
+}
+
+.github-icon {
+    background-image: url(./icons/github.png);
+}
+
+.email-icon {
+    background-image: url(./icons/email.jpg);
+}
+
+.icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Show Tooltip on Hover */
+.icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.about-screen {
     background-color: #324A5F;
     height: 100vh;
 }
